@@ -1,0 +1,59 @@
+/* Default styles */
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul li:first-child {
+    margin-left:auto;
+  }
+  nav ul li:nth-child(2){
+    margin: 0 auto;
+  }
+  nav ul li:last-child {
+    margin-right:auto;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  body {
+    background-image: url(https://scontent.fqsf1-2.fna.fbcdn.net/v/t39.30808-6/326697221_952468609068040_9111582647815081384_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=l9-TKnJbLw4AX_qAfYN&_nc_ht=scontent.fqsf1-2.fna&oh=00_AfAjoilynLPSQiG0r_6ThSKkZAKoQyTb0soXqT5U24Y8VQ&oe=63E92C50);
+    background-size: 100%;
+    background-position: center;
+    padding-top: 60px; /* The same height as the navbar */
+  }
+  
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-wrap: wrap;
+    }
+    
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+  }
